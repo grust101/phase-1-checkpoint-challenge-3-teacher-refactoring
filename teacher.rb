@@ -6,14 +6,12 @@ class Teacher < Teaching_person
 
   def initialize(options={})
     @phase = 3
-    @age = options.fetch(:age, 0)
-    @name = options.fetch(:name, "")
+   super
     @target_raise = 1000
   end
 
-  # def offer_high_five
-  #   "High five!"
-  # end
+
+
 
   def teach_stuff
     response = ""
